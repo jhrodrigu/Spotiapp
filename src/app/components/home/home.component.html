@@ -1,1 +1,7 @@
-<p>home works!</p>
+<ul>
+    <li *ngFor="let pais of paises">
+        {{pais.name}}
+        <p>{{pais.capital}}</p>
+        <img src="{{pais.flag}}" width="100px">
+    </li>
+</ul>
