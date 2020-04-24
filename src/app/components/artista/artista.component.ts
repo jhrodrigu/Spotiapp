@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-artista',
   templateUrl: './artista.component.html',
-  styleUrls: ['./artista.component.css']
+  styleUrls: []
 })
 export class ArtistaComponent implements OnInit {
 

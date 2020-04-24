@@ -4,7 +4,7 @@ import { SpotifyService } from '../../services/spotify.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: []
 })
 export class HomeComponent {
 
@@ -15,9 +15,8 @@ export class HomeComponent {
   ) {
     this.spotify.getNewReleases()
       .subscribe( (data: any) => {
-        console.log(data.albums.items);
-        this.nuevasCanciones = data.albums.items;
-          
+        console.log(data);
+        this.nuevasCanciones = data;
       });
   }
 
